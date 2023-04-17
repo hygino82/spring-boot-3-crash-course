@@ -6,26 +6,11 @@ import java.util.Optional;
 
 import org.springframework.stereotype.Repository;
 
+import dev.hygino.calendar.dto.ContentInsertDTO;
 import dev.hygino.calendar.model.Content;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-@Repository
-public class ContentRepository {
+public interface ContentRepository extends JpaRepository<Content,Integer> {
 
-    private final List<Content> contents = new ArrayList<>();
 
-    public ContentRepository() {
-    }
-
-    public List<Content> findAll() {
-        return contents;
-    }
-
-    public Optional<Content> findById(Integer id) {
-        return contents.stream().filter(c -> c.id().equals(id)).findFirst();
-    }
-
-    public Content insert(Content obj) {
-        contents.add(obj);
-        return obj;
-    }
 }
