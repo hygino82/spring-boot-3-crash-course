@@ -49,7 +49,7 @@ public class ContentService {
 
 		entity.setContentType(obj.contentType());
 		entity.setDateUpdated(LocalDateTime.now());
-		entity.setDesc(obj.desc());
+		entity.setDescription(obj.desc());
 		entity.setTitle(obj.title());
 		entity.setUrl(obj.url());
 
