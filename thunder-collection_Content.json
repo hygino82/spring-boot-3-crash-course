@@ -1,0 +1,89 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Content",
+    "dateExported": "2023-04-18T16:31:44.273Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "339d9a16-c7e0-48b7-9f37-dbb1a1529bc6",
+            "colId": "078f15af-05cf-4c6c-84c8-c45789316bcc",
+            "containerId": "",
+            "name": "Find all",
+            "url": "http://localhost:8080/api/v1/content",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-04-18T16:22:28.200Z",
+            "modified": "2023-04-18T16:22:55.036Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e6a4271e-b385-434a-80df-b25e607a00d0",
+            "colId": "078f15af-05cf-4c6c-84c8-c45789316bcc",
+            "containerId": "",
+            "name": "Find by Id",
+            "url": "http://localhost:8080/api/v1/content/2",
+            "method": "GET",
+            "sortNum": 15000,
+            "created": "2023-04-18T16:27:40.376Z",
+            "modified": "2023-04-18T16:29:35.949Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a09348bf-f466-4c82-b0dc-ba0e2e8e3ae9",
+            "colId": "078f15af-05cf-4c6c-84c8-c45789316bcc",
+            "containerId": "",
+            "name": "Delete by Id",
+            "url": "http://localhost:8080/api/v1/content/2",
+            "method": "DELETE",
+            "sortNum": 16250,
+            "created": "2023-04-18T16:30:48.238Z",
+            "modified": "2023-04-18T16:31:16.303Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f49c153f-4ef8-42e3-a759-bbac79fb7f61",
+            "colId": "078f15af-05cf-4c6c-84c8-c45789316bcc",
+            "containerId": "",
+            "name": "Update by Id",
+            "url": "http://localhost:8080/api/v1/content/2",
+            "method": "PUT",
+            "sortNum": 17500,
+            "created": "2023-04-18T16:29:47.716Z",
+            "modified": "2023-04-18T16:30:24.720Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Super Mario\",\n  \"desc\": \"Filme sem mimi\",\n  \"status\": \"PUBLISHED\",\n  \"contentType\": \"VIDEO\",\n  \"url\": \"www.nintendo.com/mario-movie\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "0fe41658-44f3-492e-ae57-ec2dcdbafe71",
+            "colId": "078f15af-05cf-4c6c-84c8-c45789316bcc",
+            "containerId": "",
+            "name": "Insert",
+            "url": "http://localhost:8080/api/v1/content",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-04-18T16:27:06.711Z",
+            "modified": "2023-04-18T16:28:53.439Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Super Mario\",\n  \"desc\": \"Filme sem mimi\",\n  \"status\": \"PUBLISHED\",\n  \"contentType\": \"VIDEO\",\n  \"url\": \"www.nintendo.com/mario-movie\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
